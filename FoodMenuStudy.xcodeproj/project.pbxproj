@@ -13,6 +13,8 @@
 		DE5E0094280BEA1A001EB806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5E0092280BEA1A001EB806 /* Main.storyboard */; };
 		DE5E0096280BEA1D001EB806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5E0095280BEA1D001EB806 /* Assets.xcassets */; };
 		DE5E0099280BEA1D001EB806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5E0097280BEA1D001EB806 /* LaunchScreen.storyboard */; };
+		DE5E00A1280BEBF8001EB806 /* YemekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E00A0280BEBF8001EB806 /* YemekTableViewCell.swift */; };
+		DE5E00A3280BED1A001EB806 /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E00A2280BED1A001EB806 /* Yemekler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DE5E0095280BEA1D001EB806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5E0098280BEA1D001EB806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5E009A280BEA1D001EB806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5E00A0280BEBF8001EB806 /* YemekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekTableViewCell.swift; sourceTree = "<group>"; };
+		DE5E00A2280BED1A001EB806 /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				DE5E008C280BEA1A001EB806 /* AppDelegate.swift */,
 				DE5E008E280BEA1A001EB806 /* SceneDelegate.swift */,
 				DE5E0090280BEA1A001EB806 /* ViewController.swift */,
+				DE5E00A0280BEBF8001EB806 /* YemekTableViewCell.swift */,
+				DE5E00A2280BED1A001EB806 /* Yemekler.swift */,
 				DE5E0092280BEA1A001EB806 /* Main.storyboard */,
 				DE5E0095280BEA1D001EB806 /* Assets.xcassets */,
 				DE5E0097280BEA1D001EB806 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5E00A3280BED1A001EB806 /* Yemekler.swift in Sources */,
 				DE5E0091280BEA1A001EB806 /* ViewController.swift in Sources */,
+				DE5E00A1280BEBF8001EB806 /* YemekTableViewCell.swift in Sources */,
 				DE5E008D280BEA1A001EB806 /* AppDelegate.swift in Sources */,
 				DE5E008F280BEA1A001EB806 /* SceneDelegate.swift in Sources */,
 			);

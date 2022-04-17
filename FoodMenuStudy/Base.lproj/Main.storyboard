@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodMenuStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I0f-Ta-2uD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yemekHucre" id="SOb-Mr-yYP" customClass="YemekTableViewCell" customModule="FoodMenuStudy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SOb-Mr-yYP" id="Vpr-NH-uFB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="izgaratavuk" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-GE-kiX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="A7p-i8-rbW"/>
+                                                        <constraint firstAttribute="height" constant="100" id="OOA-4l-cpI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tavuk Izgara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjp-Fn-lZB">
+                                                    <rect key="frame" x="129" y="11" width="110" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D60-lv-6IL">
+                                                    <rect key="frame" x="129" y="65" width="51" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" systemColor="linkColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCy-gu-KOy">
+                                                    <rect key="frame" x="308" y="32.5" width="106" height="35"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Sipariş Ver">
+                                                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                        <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="siparisVerButton:" destination="SOb-Mr-yYP" eventType="touchUpInside" id="IHn-Fe-4zJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9Yb-GE-kiX" firstAttribute="top" secondItem="Vpr-NH-uFB" secondAttribute="top" id="5Md-A1-1oB"/>
+                                                <constraint firstItem="D60-lv-6IL" firstAttribute="top" secondItem="hjp-Fn-lZB" secondAttribute="bottom" constant="30" id="917-YJ-hLd"/>
+                                                <constraint firstItem="hjp-Fn-lZB" firstAttribute="top" secondItem="Vpr-NH-uFB" secondAttribute="topMargin" id="AnM-yf-Xgy"/>
+                                                <constraint firstItem="9Yb-GE-kiX" firstAttribute="leading" secondItem="Vpr-NH-uFB" secondAttribute="leading" id="Frm-oe-67N"/>
+                                                <constraint firstItem="D60-lv-6IL" firstAttribute="bottom" secondItem="Vpr-NH-uFB" secondAttribute="bottomMargin" id="L6D-LV-hri"/>
+                                                <constraint firstItem="hCy-gu-KOy" firstAttribute="top" secondItem="Vpr-NH-uFB" secondAttribute="top" constant="32.5" id="Xyt-uU-uUu"/>
+                                                <constraint firstAttribute="trailing" secondItem="hCy-gu-KOy" secondAttribute="trailing" id="lum-ZP-vH7"/>
+                                                <constraint firstAttribute="bottom" secondItem="9Yb-GE-kiX" secondAttribute="bottom" id="oVh-hn-PVC"/>
+                                                <constraint firstItem="D60-lv-6IL" firstAttribute="leading" secondItem="9Yb-GE-kiX" secondAttribute="trailing" constant="29" id="xz7-In-jed"/>
+                                                <constraint firstItem="hCy-gu-KOy" firstAttribute="centerY" secondItem="Vpr-NH-uFB" secondAttribute="centerY" id="y9G-2t-zqu"/>
+                                                <constraint firstItem="hjp-Fn-lZB" firstAttribute="leading" secondItem="9Yb-GE-kiX" secondAttribute="trailing" constant="29" id="yDJ-ut-dQ5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelYemekAdi" destination="hjp-Fn-lZB" id="hrI-mf-mFu"/>
+                                            <outlet property="labelYemekFiyat" destination="D60-lv-6IL" id="Kdw-hp-VTK"/>
+                                            <outlet property="yemekResimImageView" destination="9Yb-GE-kiX" id="bdh-Yr-C26"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I0f-Ta-2uD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4rk-G0-DKF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I0f-Ta-2uD" secondAttribute="trailing" id="IF3-XZ-5tZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I0f-Ta-2uD" secondAttribute="bottom" id="XBY-0p-qJv"/>
+                            <constraint firstItem="I0f-Ta-2uD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f5A-Wo-kPM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="yemeklerTableView" destination="I0f-Ta-2uD" id="rgr-7e-hCi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="108.48214285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="izgaratavuk" width="256" height="256"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
